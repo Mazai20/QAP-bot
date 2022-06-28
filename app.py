@@ -31,7 +31,7 @@ def content(message: telebot.types.Message):
 
         total_base = Convertor.conver(quote, base, amount,)
     except ConvertionExeptin as e:
-        bot.reply_to(message,f'Ощибка пользователя \n {e} ')
+        bot.reply_to(message,f'Ошибка пользователя \n {e} ')
     except Exception as e:
         bot.reply_to(message,f'не удалось обратботать команду \n {e} ')
     else:
